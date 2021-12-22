@@ -1,5 +1,5 @@
 function promiseSequence(inputs, promiseMaker) {
-  let inputs = [...inputs];
+  inputs = [...inputs];
 
   function handleNextInput(outputs) {
     if (inputs.length === 0) return outputs;
