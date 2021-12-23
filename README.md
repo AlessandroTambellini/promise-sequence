@@ -44,6 +44,8 @@ promiseSequence(urls, fetchBody)
   .catch(console.error);
 ```
 
+You could also add this function as a method of the Promise class but, I discourage it because if in future will be added a method with the name you specify for this function, (ex. `Promise.sequence()`) there are going to be compatibility problems.
+
 ### Credits
 
 "JavaScript: The Definitive Guide" by @davidflanagan
